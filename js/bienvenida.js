@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     Swal.fire({
         html: `
-            <div style="background-image: url('/img/bienvenida.webp'); background-size: cover; background-position: center; padding: 20px; border-radius: 12px; color: #ffffff; display: flex; flex-direction: column; align-items: center; text-align: left;">
+            <div style="background-image: url('img/bienvenida.webp'); background-size: cover; background-position: center; padding: 20px; border-radius: 12px; color: #ffffff; display: flex; flex-direction: column; align-items: center; text-align: left;">
                 <br>
                 <br>
                 <br>
