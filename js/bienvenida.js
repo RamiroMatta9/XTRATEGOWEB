@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 <br>
                 <br>
                 <br>
-                <div style="background: rgba(255, 255, 255, 0.6); padding: 15px 20px; border-radius: 8px; width: 80%; margin-bottom: 20px; text-align: center;">
+                <div style="background: rgba(255, 255, 255, 0.6); padding: 15px 20px; border-radius: 8px; width: 80%; margin-bottom: 20px; text-align: center; color: #000;">
                     <h2 style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 28px; margin: 0;">Bienvenido a XTRATEGO</h2>
                 </div>
                 
-                <div style="background: rgba(255, 255, 255, 0.5); padding: 15px 20px; border-radius: 8px; width: 80%; font-size: 18px; line-height: 1.6;">
+                <div style="background: rgba(255, 255, 255, 0.5); padding: 15px 20px; border-radius: 8px; width: 80%; font-size: 18px; line-height: 1.6; color: #000;">
                     <p style="margin: 0;">
                         ¿Te imaginas llevar tu negocio al siguiente nivel en un mundo cada vez más digital?
                     </p>
