@@ -1,0 +1,296 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    opacity: 0; /* Para animación */
+    animation: zoomIn 1s ease-out forwards;
+}
+
+/* Estilos para las imágenes superiores */
+.imagenes-superiores {
+    display: flex;
+    flex-wrap: nowrap; /* Mantener todas las imágenes en una sola línea */
+}
+
+.imagen-con-overlay {
+    position: relative;
+    flex: 1; /* Permitir que cada imagen ocupe el mismo espacio */
+    margin: 0; /* Sin margen entre imágenes */
+    opacity: 0; /* Para animación */
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.imagen-con-overlay img {
+    width: 100%;
+    height: 500px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantener la relación de aspecto */
+}
+
+/* Overlay styles */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.imagen-con-overlay:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h2 {
+    font-size: 1.8rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+.overlay button {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+/* Estilo general de las tarjetas */
+.custom-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 20px;
+    max-width: 900px;
+    width: 100%; /* Asegura que todas las tarjetas usen el 100% de la anchura del contenedor */
+    transition: all 0.3s ease;
+    opacity: 0; /* Para animación */
+    animation: slideIn 1s ease-out forwards;
+    box-sizing: border-box;
+}
+
+.custom-card img {
+    width: 390px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    flex-shrink: 0; /* Evita que la imagen cambie de tamaño */
+}
+
+.custom-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.custom-card.reverse img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.custom-card .card-body {
+    text-align: left;
+    flex: 1; /* Asegura que el contenido textual ocupe el espacio restante */
+    min-width: 0; /* Permite que el texto se ajuste sin modificar la anchura de la tarjeta */
+}
+
+.custom-card .card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #363d42;
+    margin-bottom: 10px;
+}
+
+.custom-card .card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.custom-card button {
+    margin-top: 15px;
+    width: 100%; /* Asegura que el botón ocupe todo el ancho disponible */
+}
+
+/* Asegurarse de que .custom-card-extra tenga un layout flexible para alinear los botones */
+.custom-card-extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido se distribuya */
+    height: 100%; /* Ocupa el 100% de la altura del contenedor */
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card-extra .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Asegura que .card-body use toda la altura disponible */
+}
+
+.custom-card-extra ul {
+    flex-grow: 1; /* Empuja el botón hacia abajo */
+}
+
+.custom-card-extra button {
+    align-self: flex-start;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto de elevación al pasar el cursor */
+.custom-card-extra:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
+/* Estilos para los títulos de las nuevas tarjetas */
+.custom-card-extra .card-title {
+    font-size: 1.5rem;
+    color: #007bff; /* Color azul destacado */
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los textos de las nuevas tarjetas */
+.custom-card-extra .card-text {
+    color: #495057;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Estilos para el botón en las nuevas tarjetas */
+.custom-card-extra button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-card-extra button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño en hover */
+}
+
+/* Estilos para tarjetas dentro del carrusel */
+.carousel .custom-card {
+    border: 2px solid #007bff; /* Borde azul para destacar */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+    border-radius: 12px; /* Bordes más redondeados */
+    padding: 25px;
+    max-width: 800px;
+    width: 100%;
+    background: linear-gradient(145deg, #ffffff, #f1f3f4); /* Degradado sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 450px; /* Altura fija para todas las tarjetas */
+    box-sizing: border-box;
+}
+
+/* Efecto de elevación al pasar el cursor */
+.carousel .custom-card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta ligeramente */
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada */
+}
+
+/* Contenedor del carrusel con altura mínima fija */
+.carousel-inner {
+    min-height: 480px; /* Ajusta según sea necesario */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .imagenes-superiores {
+        flex-direction: column;
+    }
+
+    .imagen-con-overlay {
+        margin: 0;
+    }
+
+    .overlay h2 {
+        font-size: 1.5rem;
+    }
+
+    .overlay button {
+        font-size: 0.9rem;
+    }
+
+    .custom-card, .custom-card.reverse {
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+        width: 100%; /* Asegura que las tarjetas usen todo el ancho disponible en pantallas pequeñas */
+    }
+
+    .custom-card img, .custom-card.reverse img {
+        margin: 0 0 15px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-card .card-body, .custom-card.reverse .card-body {
+        text-align: center;
+    }
+}
