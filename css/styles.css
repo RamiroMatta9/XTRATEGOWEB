@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h2 {
+.imagenes-superiores .h2 {
     color: white;
     font-size: 24px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
