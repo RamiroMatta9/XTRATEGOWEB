@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function (e) {
             const estaAbierto = obtenerEstadoHorario(); // Verifica el estado en el momento del clic
             if (action === "whatsapp") {
-                handleContactButton(e, estaAbierto, 'https://api.whatsapp.com/send/?phone=%2B51954117261&text=Buen+d%C3%ADa%2C+estoy+interesado+en+obtener+m%C3%A1s+informaci%C3%B3n+sobre+XTRATEGO.');
+                handleContactButton(e, estaAbierto, 'https://api.whatsapp.com/send/?phone=%2B51967315653&text=Buen+d%C3%ADa%2C+estoy+interesado+en+obtener+m%C3%A1s+informaci%C3%B3n+sobre+XTRATEGO.');
             } else if (action === "consultor-financiero") {
-                handleContactButton(e, estaAbierto, 'https://api.whatsapp.com/send/?phone=%2B51954117261&text=Buen+d%C3%ADa%2C+estoy+interesado+en+obtener+consultoria+financiera+de+XTRATEGO.');
+                handleContactButton(e, estaAbierto, 'https://api.whatsapp.com/send/?phone=%2B51967315653&text=Buen+d%C3%ADa%2C+estoy+interesado+en+obtener+consultoria+financiera+de+XTRATEGO.');
             } else if (action === "capacitacion") {
-                handleContactButton(e, estaAbierto, 'https://api.whatsapp.com/send/?phone=%2B51954117261&text=Buen+d%C3%ADa%2C+estoy+interesado+en+la+capacitaci%C3%B3n+de+XTRATEGO.');
+                handleContactButton(e, estaAbierto, 'https://api.whatsapp.com/send/?phone=%2B51967315653&text=Buen+d%C3%ADa%2C+estoy+interesado+en+la+capacitaci%C3%B3n+de+XTRATEGO.');
             } else if (action === "proximamente") {
                 e.preventDefault();
                 Swal.fire({
