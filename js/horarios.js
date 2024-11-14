@@ -1,11 +1,11 @@
 const dias = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
 const horarios = [
     "Cerrado", // domingo
-    "09:00 a. m. - 05:00 p. m.", // lunes
-    "09:00 a. m. - 05:00 p. m.", // martes
-    "09:00 a. m. - 05:00 p. m.", // miércoles
-    "09:00 a. m. - 05:00 p. m.", // jueves
-    "09:00 a. m. - 05:00 p. m.", // viernes
+    "00:00 a. m. - 11:59 p. m.", // lunes
+    "00:00 a. m. - 11:59 p. m.", // martes
+    "00:00 a. m. - 11:59 p. m.", // miércoles
+    "00:00 a. m. - 11:59 p. m.", // jueves
+    "00:00 a. m. - 11:59 p. m.", // viernes
     "Cerrado" // sábado
 ];
 
